@@ -19,6 +19,8 @@ namespace WindowsFormsApp2
 
         private void BtnNovoSalario_Click(object sender, EventArgs e)
         {
+            //variável string sem aplicação em lugar nenhuma
+            //alocou espaço em memória atoa
             string nome = txtNomeFunc.Text;
 
             double salarioFix = Convert.ToDouble(txtSlrFixo.Text);
@@ -26,6 +28,7 @@ namespace WindowsFormsApp2
 
             double calcVenda = salarioFix + (vendaMed * 0.10);
 
+            //não usou string interpolation EX MALANDRO
             MessageBox.Show("Funcionário: " + txtNomeFunc.Text+ "\n"
                             + "Salario base: " + txtSlrFixo.Text + "\n"
                             + "Venda Total do Mês: " + txtVendas.Text + "\n"

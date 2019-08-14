@@ -25,7 +25,7 @@ namespace WindowsFormsApp2
         private void BtnCalcular_Click(object sender, EventArgs e)
         {
             var vlr = Convert.ToInt32(txtNum.Text);
-            if (vlr % 2 ==0)
+            if (vlr % 2 == 0)
             {
                 MessageBox.Show($"{vlr} O Valor informado é divisivel por ele mesmo");
             }
@@ -33,6 +33,18 @@ namespace WindowsFormsApp2
             {
                 MessageBox.Show($"{vlr} O Valor informado não é divisivel por ele");
             }
+
+
+
+            //fiz o mesmo código, porém com um nó a menos
+            if (vlr % 2 == 0)
+            {
+                MessageBox.Show($"{vlr} O Valor informado é divisivel por ele mesmo");
+                return;
+            }
+
+            MessageBox.Show($"{vlr} O Valor informado não é divisivel por ele");
+
         }
     }
 }

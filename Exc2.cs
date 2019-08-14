@@ -21,8 +21,10 @@ namespace WindowsFormsApp2
         {
             int a = Convert.ToInt32(txtValorA.Text);
             int b = Convert.ToInt32(txtValorB.Text);
+            //ao inves de double X usar double sum e já era
             double X = ((a * 9) / (87 - b)) * 2;
 
+            //desnecessário essa variável zum, 
             double sum = X;
 
             MessageBox.Show($"A soma é : {sum}");

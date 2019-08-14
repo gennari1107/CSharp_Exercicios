@@ -24,9 +24,12 @@ namespace WindowsFormsApp2
 
             double sum = (salario * reajuste) / 100;
 
+            //variável com nome maiúsculo, substituir para totalSalario
             double Totalsalario = salario + sum;
 
-            MessageBox.Show(string.Format(" O Valor total a receber é : {0:0,0.00}", Totalsalario));
+            //Eu trocaria por esse código aqui...
+            MessageBox.Show($"O Valor total a receber é : {Totalsalario.ToString("C")}");
+            
 
             txtSalario.Text = string.Empty;
             txtReajust.Text = string.Empty;
